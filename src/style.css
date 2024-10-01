@@ -1,0 +1,144 @@
+body {
+    font-family: 'montserrat', sans-serif;
+    background-color: #f4f4f9;
+}
+
+@media screen and (max-width: 767px) {
+    .section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 480px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        width: 1280px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+.users-title {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.filter-container input {
+    margin: 0 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.users {
+    display: block;
+    padding-left: 0px;
+
+    @media screen and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(275px, 1fr));
+        grid-gap: 2rem;
+    };
+
+    @media screen and (min-width: 1278px) {
+        grid-template-columns: repeat(3, minmax(275px, 1fr));
+    };
+}
+
+.list {
+    list-style: none;
+}
+
+.card {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* width: 350px; */
+    overflow: hidden;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.user-header {
+    background-color: #007bff;
+  padding: 20px;
+  color: #fff;
+}
+
+.user-title {
+    font-size: 1.5rem;
+        margin: 0;
+}
+
+.username {
+    font-size: 1rem;
+        margin-top: 5px;
+        font-style: italic;
+}
+
+.user-body {
+    padding: 20px;
+}
+
+.user-body p {
+    margin: 10px 0;
+}
+
+.user-body a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.address,
+.company {
+    margin-top: 20px;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1.2rem;
+}
